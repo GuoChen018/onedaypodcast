@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Day Podcast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
+    <style>
+        span {
+            font-style: italic;
+        }
+
+        .services {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 120px;
+        }
+
+        .service-col {
+            flex-basis: 31%;
+            background: rgba(4, 9, 30);
+            border-radius: 10px;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            padding: 36px;
+            box-sizing: border-box;
+            transition: 0.5s;
+        }
+
+        h3 {
+            text-align: left;
+            font-size: 24px;
+            color: #fff;
+            font-weight: 600;
+            margin: 20px 0 10px 0;
+        }
+
+        .service-col p {
+            text-align: left;
+            color: #fff;
+            font-size: 18px;
+            padding: 0;
+        }
+
+        .service-col .fas {
+            font-size: 36px;
+            display: block;
+            color: #fdbe10;
+            text-align: left;
+        }
+
+        .service-col .far {
+            font-size: 36px;
+            display: block;
+            color: #fdbe10;
+            text-align: left;
+        }
+
+        .service-col:hover {
+            position: relative;
+            transform: translate(0px, -8px);
+        }
+
+        .testimonials {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 120px;
+        }
+
+        .testimonial-col {
+            flex-basis: 45%;
+            border-radius: 10px;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            text-align: left;
+            background: #fdbe10;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            padding-right: 32px;
+            display: flex;
+            transition: 0.5s;
+        }
+
+        .testimonial-col:hover {
+            position: relative;
+            transform: translate(0px, -8px);
+        }
+
+        .testimonial-col img {
+            overflow-x: visible;
+            height: 50px;
+            width: 50px;
+            margin-left: 40px;
+            margin-right: 30px;
+            border-radius: 50%;
+        }
+
+        .testimonial-col p {
+            padding: 0;
+            font-size: 20px;
+        }
+
+        .testimonial-col h3 {
+            margin-top: 16px;
+            color: rgba(4, 9, 30);
+            text-align: left;
+        }
+
+        .testimonial-col .fas {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1>We create better <br> podcasts <span>faster</span>.</h1> 
+        <p>Simply record your podcast and send it to us. <br> We’ll do the rest in less than a day.</p>
+        <a href="contact.html" class="hero-btn">Let's get started</a>
+    </div>    
+    </section>
+
+    <!-- Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+    <section class="services">
+        <h1>We do the heavy lifting</h1>
+        <p>Whatever you want for the podcast, we deliver in less than 24 hours.</p>
+        <div class="row">
+            <div class="service-col">
+                <i class="fas fa-laptop"></i>
+                <h3>Audio Editing</h3>
+                <p>Basic editing or multi-track compilation</p>
+            </div>
+            <div class="service-col">
+                <i class="far fa-clipboard"></i>
+                <h3>Show Notes</h3>
+                <p>Basic or advanced show notes for your blog or essay</p>
+            </div>
+            <div class="service-col">
+                <i class="far fa-keyboard"></i>
+                <h3>Transcription</h3>
+                <p>Word-by-word transcription by our in-house team</p>
+            </div>
+        </div>
+        <a href="services.html" class="hero-btn">Explore All Services</a>
+    </section>
+
+    <!-- testimonials -->
+    <section class="testimonials">
+        <h1>Word on the street</h1>
+        <p>These always motivate us to do our best work.</p>
+
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="images/t1.png">
+                <div>
+                    <p>One Day Podcast blew my mind with their efficiency and quality. They're true professionals!</p>
+                    <h3>Christina Zucker (Google)</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="images/t3.png">
+                <div>
+                    <p>“The team absolutely nailed the work they did for me. Can't believe they finished in one day!”</p>
+                    <h3>Jordan Phelps (Adobe)</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+            
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <h1>Ready to take your podcast to the next level?</h1>
+        <a href="contact.html" class="hero-btn">Let's make it happen</a>
+    </section>
+    <section class="footer">
+        <h4>One Day Podcast</h4>
+        <p>Group of passionate audio engineers, video editors, strategists, <br>and podcasters who are here for you.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </section>
+</body>
+</html>

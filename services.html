@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Day Podcast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <style>
+        .all-services {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        .all-services-col {
+            flex-basis: 40%;
+            margin-top: 2%;
+            margin-bottom: 5%;
+            padding: 36px;
+            box-sizing: border-box;
+            text-align: left;
+            transition: 0.5s;
+        }
+
+        .all-services img {
+            width: 100%;
+        }
+
+        .all-services p {
+            padding-left: 0;
+            margin: 0 0 10px 0;
+        }
+
+        .all-services h3 {
+            color: rgba(4, 9, 30);
+            margin-top: 32px;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Podcast Services</h1> 
+            <p>From basic form of audio editing, through to video podcast production, our team is ready to take your podcast to the next level as fast as possible with quality. </p>
+        </div>    
+    </section>
+
+    <section class="all-services">
+        <div class="row">
+            <div class="all-services-col">
+                <img src="images/audio-editing.png">
+                <h3>Audio Editing</h3>
+                <p>World class audio engineers at your fingertip</p>
+            </div>
+            <div class="all-services-col">
+                <img src="images/show-notes.png">
+                <h3>Show Notes</h3>
+                <p>Complete summaries and key points ready to use for your blog or essay</p>
+            </div>
+            <div class="all-services-col">
+                <img src="images/transcription.png">
+                <h3>Transcription</h3>
+                <p>Well-crafted PDF document of your podcast episode</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="all-services-col">
+                <img src="images/video-editing.png">
+                <h3>Video Editing</h3>
+                <p>High-quality video production ready to publish</p>
+            </div>
+            <div class="all-services-col">
+                <img src="images/consulting.png">
+                <h3>Consulting</h3>
+                <p>Get a crystal clear, complete document that will map out your future podcast journey</p>
+            </div>
+            <div class="all-services-col">
+                <img src="images/package.png">
+                <h3>Create Package</h3>
+                <p>Want to create your own package? Talk to us!</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+    <!-- CTA -->
+    <section class="cta">
+        <h1>Ready to take your podcast to the next level?</h1>
+        <a href="contact.html" class="hero-btn">Let's make it happen</a>
+    </section>
+    <section class="footer">
+        <h4>One Day Podcast</h4>
+        <p>Group of passionate audio engineers, video editors, strategists, <br>and podcasters who are here for you.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </section>
+</body>
+</html>
